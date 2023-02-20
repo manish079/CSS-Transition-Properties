@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.2 rem;
+    /* animation: all 1s ease-in-out; */
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to right, #041308, #0b3317);
+}
+/* body :hover{
+    background: linear-gradient(to right, #0f1304, #0b2833);
+} */
+.left-text{
+    flex-basis: 30%;
+}
+.gallery{
+    flex-basis: 50%;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 120px;
+}
+.subheading{
+    color: #ddd;
+    margin-top: 10px;
+    text-align: center;
+}
+.box{
+    background-size: cover;
+    background-position: center;
+    /* background-position: top; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    background-blend-mode:hard-light;
+    /* mix-blend-mode:overlay; */
+    transition: all 1s ease-in-out;
+    color: white;
+
+}
+/* .box-1{
+    grid-row: 1/span 2;
+}
+.box-2{
+    grid-column: 2/span 3;
+} */
+
+.box:hover{
+    background-color: #999;
+    background-position: bottom;
+    box-shadow: 0 0 4px white;
+    cursor: pointer;
+}
+
+
+/* utility-class */
+
+.row-2{
+    grid-row: span 2;
+}
+.col-2{
+    grid-column: span 2;
+}
+
+
